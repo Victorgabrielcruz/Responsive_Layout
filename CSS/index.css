@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.top-bar {
+    background-color: teal;
+    display: flex;
+    justify-content: center; /* Centraliza no eixo principal (horizontalmente) */
+    align-items: center;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0;
+}
+header{
+    margin-top: 0;
+    display: flex;
+    justify-content: center; 
+    color: white;
+}
+.logo {
+    display: block;
+    align-items: center;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.menu{
+    margin-right: 95%;
+    align-items: flex-start;
+    margin-bottom: 0;
+    margin-top: 0;
+    z-index: 2;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+.search-bar input {
+    border: none;
+    margin-left: 10px;
+}
+article{
+    margin: 15px 5px;
+}
+.dashboard {
+    display: flex;
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    white-space: nowrap; /* Evita que os itens quebrem em várias linhas */
+}
+.item_categorias{
+    flex-shrink: 0; /* Evita que os itens diminuam de tamanho */
+    background-color: lightblue;
+    margin-right: 10px; /* Espaço entre os itens */
+    border-radius: 20%;
+}
+
+.item {
+    flex-shrink: 0; /* Evita que os itens diminuam de tamanho */
+    width: 200px; /* Largura de exemplo para os itens */
+    height: 150px; /* Altura de exemplo para os itens */
+    background-color: lightblue;
+    margin-right: 10px; /* Espaço entre os itens */
+    border-radius: 5%;
+}
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}

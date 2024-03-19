@@ -2,38 +2,45 @@
     margin: 0;
     padding: 0;
 }
+
 .top-bar {
     background-color: teal;
     display: flex;
-    justify-content: center; /* Centraliza no eixo principal (horizontalmente) */
+    justify-content: center;
+    /* Centraliza no eixo principal (horizontalmente) */
     padding: 20px;
     color: white;
     margin-bottom: 0;
     flex-direction: column;
     align-items: center;
+
 }
-header{
+
+header {
     margin-top: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     color: white;
 }
+
 .logo {
     display: block;
     align-items: center;
 }
+
 .logo img {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
-.menu{
+
+.menu {
     margin-right: 95%;
     align-items: flex-start;
     margin-bottom: 0;
     margin-top: 0;
     z-index: 2;
 }
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -43,44 +50,49 @@ header{
     border: solid 1px black;
     border-radius: 20px;
 }
+
 .search-bar input {
     border: none;
     margin-left: 10px;
 }
-article{
+
+article {
     margin: 15px 5px;
 }
+
 .dashboard {
     display: flex;
-    overflow-x: auto; /* Habilita a rolagem horizontal */
-    white-space: nowrap; /* Evita que os itens quebrem em várias linhas */
+    overflow-x: auto;
+    /* Habilita a rolagem horizontal */
+    white-space: nowrap;
+    /* Evita que os itens quebrem em várias linhas */
 }
-.item_categorias{
-    flex-shrink: 0; /* Evita que os itens diminuam de tamanho */
+
+.item_categorias {
+    flex-shrink: 0;
+    /* Evita que os itens diminuam de tamanho */
     background-color: lightblue;
-    margin-right: 10px; /* Espaço entre os itens */
+    margin-right: 10px;
+    /* Espaço entre os itens */
     border-radius: 20%;
     margin-bottom: 20px;
 }
 
 .item {
-    flex-shrink: 0; /* Evita que os itens diminuam de tamanho */
-    width: 200px; /* Largura de exemplo para os itens */
-    height: 150px; /* Altura de exemplo para os itens */
-    background-color: lightblue;
-    margin-right: 10px; /* Espaço entre os itens */
+    flex-shrink: 0;
+    width: 156px;
+    height: 150px;
+    margin-right: 10px;
     border-radius: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 600px) {
-    .top-bar {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .search-bar {
-        width: 100%;
-    }
+.item img {
+    width: 156px;
+    height: 80px;
 }
+
+
 .dashboard_main {
     display: flex;
     flex-wrap: wrap;
@@ -93,9 +105,9 @@ article{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     margin: 10px;
-    width: 300px;
+    width: 328px;
+    display: flex;
 }
 
 @media (max-width: 768px) {
@@ -108,8 +120,78 @@ article{
         width: 80%;
     }
 }
+
 @media (min-width: 769px) {
-    .dashboard{
+    .dashboard {
         justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .dashboard_main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+
+    .widget {
+        width: 80%;
+    }
+    .content {
+        width: 221px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+        margin: 8px;
+    }
+
+    .text_1 {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .widget img {
+        width: 107px;
+        height: 83px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item {
+        flex-shrink: 0;
+        width: 156px;
+        height: 150px;
+        margin-right: 10px;
+    }
+
+    .item img {
+        width: 156px;
+        height: 80px;
+    }
+
+    .text {
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preco {
+        font-size: 20px;
+        text-align: center;
+        color: #E03D6E;
+        font-weight: bold;
+    }
+
+    .search-bar {
+        width: 100%;
     }
 }

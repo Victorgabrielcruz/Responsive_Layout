@@ -29,6 +29,7 @@ header {
 }
 
 .logo img {
+    margin-left: 20px;
     width: 30px;
     height: 30px;
 }
@@ -118,6 +119,9 @@ article {
 
     .widget {
         width: 80%;
+    }
+    .widget img{
+        border-radius: 10%;
     }
 }
 

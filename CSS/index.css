@@ -6,10 +6,11 @@
     background-color: teal;
     display: flex;
     justify-content: center; /* Centraliza no eixo principal (horizontalmente) */
-    align-items: center;
     padding: 20px;
     color: white;
     margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
 }
 header{
     margin-top: 0;
@@ -59,6 +60,7 @@ article{
     background-color: lightblue;
     margin-right: 10px; /* Espaço entre os itens */
     border-radius: 20%;
+    margin-bottom: 20px;
 }
 
 .item {
@@ -77,5 +79,37 @@ article{
 
     .search-bar {
         width: 100%;
+    }
+}
+.dashboard_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.widget {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .dashboard_main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .widget {
+        width: 80%;
+    }
+}
+@media (min-width: 769px) {
+    .dashboard{
+        justify-content: center;
     }
 }

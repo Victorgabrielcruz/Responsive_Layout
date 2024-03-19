@@ -129,13 +129,14 @@ article {
 @media (max-width: 600px) {
     .dashboard_main {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         background-color: #f2f2f2;
         padding: 10px;
     }
 
     .widget {
-        width: 980%;
+        width: 90%;
     }
     .content {
         width: 221px;
